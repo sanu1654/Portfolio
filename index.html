@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyaprakash.Sanu / Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+
+
+
+    <section class="header" id="header">
+        <nav class="navbar">
+            <div class="logo-container" id="logo-container">
+                <img class="logo" src="SANU.LOGO.png" alt="sanu.logo">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
+                <ul class="nav-lists">
+                    <li><a href="#Home"> Home </a></li>
+                    <li><a href="#About"> About</a></li>
+                    <li><a href="#skills-section"> Skills </a></li>
+                    <li><a href="project.html"> Projects </a></li>
+                    <li><a href="#contacts"> Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+
+    <section class="Home" id="Home">
+
+        <section class="container" id="container">
+            <div class="inner-container" id="left-container">
+                <div class="hover-content" id="hover-content">
+                    <h2>Hello, I am </h2>
+                    <h1>SATYAPRAKASH SANU !</h1>
+                    <h4>Welcome to my Portfolio Website.<h4>
+                            <h3>I'm a <span id="element"></span></h3>
+                            <div class="butt" id="butt">
+                                <a href="My Resume - SRM.pdf" download="Sanu_Resume.pdf">
+                                    <button class="download-button" id="download-button">Download Resume</button>
+                                </a>
+                            </div>
+                </div>
+            </div>
+
+
+            <div class="inner-container" id="right-container">
+                <div class="image-container">
+                    <img src="profilepic.jpg">
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+
+
+
+
+    <section class="About" id="About">
+
+        <div class="about-section">
+            <h2>About Me</h2>
+            <br>
+            <section class="introduction" id="introduction">
+                <h3>Introduction</h3>
+                <p></p>
+                <p>
+                    I'm Satyaprakash Sanu, an Engineering Undergraduate with a
+                    passion for Website Development and Data Science. Hailing from Samastipur, Bihar, my roots are
+                    deeply embedded in a culturally rich and vibrant community. My father, Sanjeev Kumar Ray, and my
+                    mother, Minu Kumari, have been the pillars of support throughout my journey.
+                </p>
+                <p> Committed to excellence, I thrive in
+                    challenging environments and I am always eager to contribute innovative ideas to drive team
+                    success. Beyond the world of coding and algorithms, I find joy in singing and listening to music,
+                    drawing sketches and playing cricket. These hobbies not only provide balance to my life but also
+                    fuel my creativity.
+                </p>
+            </section>
+
+
+
+            <section class="education">
+                <h3>Education</h3>
+                <p></p>
+                <p>
+                    Currently pursuing my bachelor's degree in Electronics and Computer Science Engineering at <a
+                        href="https://www.srmist.edu.in/" target="_blank">SRM Institute of Science & Technology</a>
+                    - SRMIST in Kattankulathur, Tamil Nadu. I will receive my
+                    degree certificate in 2024. Additionally, I
+                    completed my High School Degree from <a href="https://srichaitanya.net/" target="_blank">Sri
+                        Chaitanya Vidya Niketan</a>, Visakhapatnam, Andhra Pradesh
+                    and I achieved a perfect CGPA of 10 in my Secondary School Certificate from <a
+                        href="http://primuspublicschool.com/" target="_blank">Primus Public
+                        School</a>, Muzaffarpur, Bihar.
+                </p>
+                <p> Throughout my
+                    journey, I've learnt programming languages like Python, C, and C++, and gained knowledge in
+                    web development technologies such as HTML5, CSS3, and JavaScript. My skills further extend to
+                    databases, including SQL and DBMS.
+                </p>
+
+                <p>
+                    Additionally, I have
+                    completed
+                    an IBM Web Development Certificate course on Coursera, attended a Web Development Workshop at
+                    NIT Trichy in February 2023 and have earned a few programming certifications from HackerRank,
+                    showcasing my commitment to continuous
+                    learning.
+                </p>
+
+            </section>
+
+            <div id="hidden-content" class="hidden-content">
+                <section class="achievements">
+                    <h3>Achievements</h3>
+                    <p></p>
+                    <ul>
+                        <li>
+                            <h5>Qualified ALL INDIA SAINIK SCHOOLS ENTRANCE EXAM (AISSEE)</h5>
+                        </li>
+                        <p></p>
+                        <p>Successfully passed the competitive ALL INDIA SAINIK SCHOOLS ENTRANCE EXAM for Kapurthala,
+                            Punjab
+                            in
+                            2013 during class VI,
+                            showcasing academic and aptitude excellence.My journey has been marked by a consistent drive
+                            for
+                            excellence and a willingness to embrace challenges.</p>
+
+                        <li>
+                            <h5>GOLD MEDALIST | 8th SOF-International Mathematical Olympiad (IMO)</h5>
+                        </li>
+                        <p></p>
+                        <p>My academic achievements also include being a Gold Medalist in the 8th SOF-International
+                            Mathematical
+                            Olympiad (IMO) in 2015 by securing the 1st rank at the school level in class VIII.</p>
+                    </ul>
+                </section>
+
+                <section class="goals">
+                    <h3>Future Goals</h3>
+                    <p></p>
+                    <p>My goal is to make meaningful contributions to the world of technology and eager to contribute to
+                        innovative projects and enhance my technical skills. Let's connect and explore the endless
+                        possibilities together.
+                    </p>
+            </div>
+            <button class="more-btn" id="more-btn" onclick="toggleMore()">More</button>
+
+
+    </section>
+
+
+
+
+
+    <section id="skills-section" class="skills-section">
+
+        <div class="skills-section">
+            <h2>Skills</h2>
+            <div class="row" id="row">
+                <div class="skills-col" id="skills-col1">
+
+                    <br>
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p><b>html5, CSS3</b></p>
+                    <p><b>JavaScript</b></p>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="skills-col" id="skills-col2">
+
+
+                    <br>
+                    <h3>Computer Programming</h3>
+                    <P><B>C/C++</B></P>
+                    <P><B>Python, Java</B></P>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="skills-col" id="skills-col3">
+
+                    <br>
+                    <h3>Database Management</h3>
+                    <p><b>SQL</b></p>
+                    <P><B>DBMS</B></P>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="skills-col" id="skills-col4">
+
+                    <br>
+                    <h3>MS OFFICE</h3>
+                    <P><B>Word, Excel</B></P>
+                    <p><b>PowerPoint</b></p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+
+
+            <div class="explore-container">
+                <div>
+                    <p>Feel free to navigate through the various projects I've worked on.</p>
+                </div>
+
+                <div class="finger-icon-container">
+                    <div class="finger-icon">👉</div>
+                    <div>
+                        <a href="project.html" class="explore-button"> Explore My Projects </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="contacts" id="contacts">
+
+
+        <div class="contacts" id="contacts">
+            <div class="contact-box" id="contact-box">
+                <h2>Contact Me</h2>
+            </div>
+
+            <div class="contact-row" id="contact-row">
+                <div class="contact-col">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>SRM University</p>
+                    <p>Potheri,Kattankulathur</p>
+                    <p></p>
+                    <p>Tamil Nadu, 603203</p>
+                </div>
+
+                <div class="contact-col">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 7542096901</p>
+                    <p>75470 54037</p>
+                </div>
+
+                <div class="contact-col" id="mail">
+                    <i class="fas fa-envelope"></i>
+                    <p>sanu1654@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <footer class="footer-section">
+        <div class="footer-content">
+            <p class="footer-thanks" id="footer-thanks">Thank you for visiting my Portfolio website.</p>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/sanu1619?mibextid=vk8aRt" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/satyaprakash.sanu?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/satyaprakash-sanu-a27115218" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="made-with">
+                <p>Made with <i class="fas fa-heart"></i> by Satyaprakash Sanu.</p>
+            </div>
+
+            <div class="marking">
+                <p class="copyright">Satyaprakash Sanu <span class="copyright-symbol">&copy;</span> 2023 | All rights
+                    reserved.</p>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+            if (disclaimer) {
+                disclaimer.remove();
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['FULL-STACK Developer ,', ' Software Engineer. . .', 'Web-Designer,'],
+            typeSpeed: 80,
+            backSpeed: 50,
+            loop: true,
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
