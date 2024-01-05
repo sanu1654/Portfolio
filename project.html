@@ -27,7 +27,14 @@
                 <ul class="nav-lists">
                     <li><a href="index.html#Home"> Home </a></li>
                     <li><a href="index.html#About"> About</a></li>
-                    <li><a href="index.html#skills-section"> Skills </a></li>
+                    <li class="dropdown" id="skillsDropdown">
+                        <a  onclick="toggleDropdown(event)" href="#">Skills</a>
+                        <div  class="dropdown-content" id="no-decoration" >
+                            <a href="index.html#skills-section"   onclick="hideDropdown()">My Skills</a>
+                            <a    href="Certificates.html"   onclick="hideDropdown()">Certificates</a>
+                          </div>
+
+                    </li>
                     <li><a href="#projects"> Projects </a></li>
                     <li><a href="index.html#contacts"> Contacts</a></li>
                 </ul>
@@ -38,7 +45,7 @@
 
 
 
-    <section class="projects" id="projects">
+    <section  class="projects" id="projects">
 
 
         <div class="projects" id="projects">

@@ -11,6 +11,33 @@ function hideMenu() {
 }
 
 
+
+
+
+var dropdownContent = document.getElementById("skillsDropdown").querySelector(".dropdown-content");
+
+    function toggleDropdown(event) {
+      event.preventDefault();
+      if (dropdownContent.style.display === "block") {
+        hideDropdown();
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    }
+
+    function hideDropdown() {
+      dropdownContent.style.display = "none";
+    }
+
+    document.addEventListener("click", function(event) {
+      var isDropdownClicked = event.target.closest("#skillsDropdown");
+      if (!isDropdownClicked && dropdownContent.style.display === "block") {
+        hideDropdown();
+      }
+    });
+
+
+  
 document.addEventListener('DOMContentLoaded', function () {
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

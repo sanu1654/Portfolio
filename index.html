@@ -27,7 +27,14 @@
                 <ul class="nav-lists">
                     <li><a href="#Home"> Home </a></li>
                     <li><a href="#About"> About</a></li>
-                    <li><a href="#skills-section"> Skills </a></li>
+                    <li class="dropdown" id="skillsDropdown">
+                        <a  onclick="toggleDropdown(event)" href="#"  >Skills </a>
+                        <div  class="dropdown-content" id="no-decoration" >
+                            <a href="#skills-section"   onclick="hideDropdown()">My Skills</a>
+                            <a    href="Certificates.html"   onclick="hideDropdown()">Certificates</a>
+                          </div>
+
+                    </li>
                     <li><a href="project.html"> Projects </a></li>
                     <li><a href="#contacts"> Contacts</a></li>
                 </ul>
@@ -47,7 +54,7 @@
                     <h4>Welcome to my Portfolio Website.<h4>
                             <h3>I'm a <span id="element"></span></h3>
                             <div class="butt" id="butt">
-                                <a href="My Resume - SRM.pdf" download="Sanu_Resume.pdf">
+                                <a href="Sanu.Resume.pdf" download="Sanu_Resume.pdf">
                                     <button class="download-button" id="download-button">Download Resume</button>
                                 </a>
                             </div>
@@ -170,7 +177,7 @@
     <section id="skills-section" class="skills-section">
 
         <div class="skills-section">
-            <h2>Skills</h2>
+            <h2>My Skills</h2>
             <div class="row" id="row">
                 <div class="skills-col" id="skills-col1">
 
