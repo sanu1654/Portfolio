@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satyaprakash.Sanu / Projects</title>
+    <title>Satyaprakash.Sanu / Certificates </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -26,10 +26,13 @@
                     <li><a href="index.html#Home"> Home </a></li>
                     <li><a href="index.html#About"> About</a></li>
                     <li class="dropdown" id="skillsDropdown">
-                        <a onclick="toggleDropdown(event)" href="#">Skills</a>
+                        <a class="moveSkills" onclick="toggleDropdown(event)" href="#" > Skills 
+                            <span class="fa-solid fa-chevron-down"></span> </a>
+
+
                         <div class="dropdown-content" id="no-decoration">
-                            <a href="index.html#skills-section" onclick="hideDropdown()">My Skills</a>
-                            <a href="#" onclick="hideDropdown()">Certificates</a>
+                            <a href="index.html#skills-section" onclick="hideDropdown()"> My Skills</a>
+                            <a href="Certificates.html" onclick="hideDropdown()"> Certificates</a>
                         </div>
 
                     </li>
@@ -45,11 +48,19 @@
 
 
 
-    <section style="background-color: gray;" class="certificate" id="certificate">
+    <section style="background-color: gainsboro;" class="certificate" id="certificate">
 
         <div class="certifications" id="certifications">
-            <h2>certifications</h2>
+            <h2>Certifications</h2>
         </div>
+
+        <br>
+        <br>
+
+        <DIV>
+            <h3>Professional Certificates</h3>
+        </DIV>
+        <br>
 
 
         <div class="certificate-container">
@@ -70,11 +81,7 @@
                 <img src="Web-Development Certificate.jpg" alt="Web-Development Workshop Certificate">
                 <p>Web-Development Workshop - NIT Trichy</p>
             </div>
-            <div class="certificate-col">
-                <!-- Certificate 2 content goes here -->
-                <img  alt="Coursera Certificate Web-development">
-                <p>COURSERA - Web-development Certificate </p>
-            </div>
+            
 
             <!-- Add more rows and columns as needed -->
 
@@ -84,63 +91,54 @@
 
         </div>
 
+        <br>
+        <br>
+
 
         <div class="certifications" id="certifications">
-            <h3>Recognition Certificates for Extracurricular Achievements</h3>
+            <h3>Recognition Certificate for Extracurricular Achievements</h3>
         </div>
+        <br>
 
 
         <div class="certificate-col2">
             <!-- Certificate 2 content goes here -->
             <img src="ATHLOS'23-Cricket Tournament Certificate.jpg" alt="ATHLOS'23-Cricket Tournament Certificate">
-            <p>ATHLOS'23-Cricket Tournament Certificate ( ECE Department - SRMIST )</p>
+            <p>RUNNER-UP ( Cricket Tournament )</p>
         </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <footer class="footer-section">
-            <div class="footer-content">
-                <p class="footer-thanks" id="footer-thanks">Thank you for visiting my Portfolio website.</p>
-                <div class="social-buttons">
-                    <a href="https://www.facebook.com/sanu1619?mibextid=vk8aRt" target="_blank"><i
-                            class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/satyaprakash.sanu?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/satyaprakash-sanu-a27115218" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                </div>
-                <div class="made-with">
-                    <p>Made with <i class="fas fa-heart"></i> by Satyaprakash Sanu.</p>
-                </div>
-
-                <div class="marking">
-                    <p class="copyright">Satyaprakash Sanu <span class="copyright-symbol">&copy;</span> 2023 | All
-                        rights
-                        reserved.</p>
-                </div>
-
-
-            </div>
-        </footer>
-
     </section>
+
+
+
+
+    <footer class="footer-section">
+        <div class="footer-content">
+            <p class="footer-thanks" id="footer-thanks">Thank you for visiting my Portfolio website.</p>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/sanu1619?mibextid=vk8aRt" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/satyaprakash.sanu?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/satyaprakash-sanu-a27115218" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="made-with">
+                <p>Made with <i class="fas fa-heart"></i> by Satyaprakash Sanu.</p>
+            </div>
+
+            <div class="marking">
+                <p class="copyright">Satyaprakash Sanu <span class="copyright-symbol">&copy;</span> 2023 | All
+                    rights
+                    reserved.</p>
+            </div>
+
+
+        </div>
+    </footer>
 
 
 
@@ -156,6 +154,7 @@
 
 
 
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
 

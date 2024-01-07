@@ -7,43 +7,17 @@
 
 }
 
-body {
-    background-color: white;
 
+
+
+h2 {
+    font-family: 'poppins', serif;
+    font-weight: 100;
 }
 
-
-
-
-@media(min-width:1200px) {
-
-    .hover-content h1 {
-        font-size: 34px;
-    }
-
-    .hover-content {
-        font-size: 25px;
-    }
-
-
-
+h1 {
+    font-family: 'georgia', serif;
 }
-
-@media(max-width:1200px) {
-
-    .hover-content h1 {
-        font-size: 22px;
-    }
-
-    .hover-content {
-        font-size: 16px;
-    }
-
-
-
-}
-
-
 
 
 
@@ -60,9 +34,7 @@ body {
 
 
 
-    .container {
-        padding-top: 40px;
-    }
+
 
     .made-with {
         font-size: 16px;
@@ -89,6 +61,10 @@ body {
         margin-top: 50px;
     }
 
+    .container {
+        padding-top: 40px;
+    }
+
 
 
 
@@ -102,6 +78,25 @@ body {
     }
 
 
+
+
+
+    .dropdown-content {
+        margin-left: -50px;
+        margin-top: 13px;
+
+
+        min-width: 160px;
+        min-height: 100px;
+        background-color: rgb(34, 114, 184);
+        z-index: 1;
+        transition: display 0.3s ease-in-out;
+        border-radius: 3px;
+        display: none;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        position: absolute;
+    }
 
 
 
@@ -123,6 +118,7 @@ body {
 
 
 
+
     .project-image {
         flex-direction: column;
     }
@@ -138,9 +134,7 @@ body {
         padding: 15px;
     }
 
-    .container {
-        padding-top: 120px;
-    }
+
 
 
     .made-with {
@@ -180,10 +174,21 @@ body {
         overflow: hidden;
         transition: right 0.4s ease-in-out;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+
+    }
+
+    .dropdown-content {
+        margin: 10px;
+        position: static;
+        margin-top: 20px;
+        background-color: rgb(34, 114, 184);
+        z-index: 1;
+        transition: display 0.3s ease-in-out;
+        display: none;
+    }
+
+    .moveSkills {
+        margin-left: 10px;
     }
 
     #nav-links.show {
@@ -201,7 +206,9 @@ body {
     .nav-links ul li {
 
         margin: 6px;
+
     }
+
 
 
 
@@ -215,6 +222,7 @@ body {
     .container {
         flex-direction: column;
         position: center;
+        padding-top: 120px;
     }
 
     #left-container,
@@ -230,7 +238,6 @@ body {
     }
 
 }
-
 
 
 
@@ -300,7 +307,7 @@ nav {
 }
 
 nav ul li a {
-    transition: color 0.2s ease;
+
     color: aliceblue;
     text-decoration: none;
     font-size: large;
@@ -310,21 +317,15 @@ nav ul li a {
 
 
 
-
-.dropdown-content {
-    margin-left: -60px;
-    margin-top: 15px;
-    position: absolute;
-    min-width: 160px;
-    min-height: 100px;
-    background-color: rgb(34, 114, 184);
-    z-index: 1;
-    transition: display 0.3s ease-in-out;
-    border-radius: 3px;
-    display: none;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+.fa-chevron-down {
+    color: white;
 
 }
+
+
+
+
+
 
 
 .dropdown-content a {
@@ -387,7 +388,11 @@ nav ul li a {
         width: 0%;
         height: 2px;
         transition: 0.3s;
+        margin-top: 2px;
+
+
     }
+
 
     .nav-links ul li a:hover::after {
         width: 100%;
@@ -396,6 +401,25 @@ nav ul li a {
 
 
 }
+
+
+nav .fa-rectangle-xmark {
+    margin-top: 29px;
+    margin-right: 17px;
+    font-size: 40px;
+    color: antiquewhite;
+
+
+}
+
+nav .fa-bars {
+    margin-right: 15px;
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: 30px;
+
+}
+
 
 
 
@@ -460,22 +484,7 @@ nav ul li a {
 
 
 
-nav .fa-rectangle-xmark {
-    margin-top: 29px;
-    margin-right: 17px;
-    font-size: 40px;
-    color: antiquewhite;
 
-
-}
-
-nav .fa-bars {
-    margin-right: 15px;
-    margin-top: 20px;
-    color: aliceblue;
-    font-size: 30px;
-
-}
 
 
 .butt {
@@ -528,31 +537,23 @@ nav .fa-bars {
 
 .container h3 {
     line-height: 1.5;
-}
-
-h3 {
-
-    line-height: 1em;
-    color: #030303;
+    color: black;
 
 }
 
 .container h4 {
     font-style: italic;
-}
-
-h4 {
     line-height: 1.5em;
-    color: #030303;
+    color: black;
 
 }
 
-h1 {
+.container h1 {
     font-family: 'georgia', serif;
-    color: #030303;
+    color: black;
 }
 
-h2 {
+.container h2 {
     font-family: 'poppins', serif;
     font-weight: 100;
 }
@@ -561,6 +562,48 @@ h2 {
     font-family: 'georgia', serif;
     color: #0f0246;
 }
+
+@media(min-width:1200px) {
+
+    .hover-content h1 {
+        font-size: 34px;
+    }
+
+    .hover-content {
+        font-size: 25px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 1200px) {
+    .hover-content h1 {
+        font-size: 26px;
+    }
+
+    .hover-content {
+        font-size: 19px;
+    }
+    
+  }
+
+
+
+@media(max-width:400px) {
+
+    .hover-content h1 {
+        font-size: 23px;
+    }
+
+    .hover-content {
+        font-size: 16.5px;
+    }
+
+
+
+}
+
 
 
 
@@ -594,9 +637,23 @@ h2 {
     display: inline-block;
     line-height: 1.3;
     min-width: 60%;
-    font-size: 2em;
+    font-size: 40px;
     margin-bottom: 20px;
 }
+
+.about-section h3 {
+
+    display: inline-flexbox;
+    line-height: 1;
+    font-size: 23px;
+
+}
+
+.about-section h3 span {
+
+    border-bottom: 1px solid #000;
+}
+
 
 .about-section p {
     font-size: 16px;
@@ -612,37 +669,18 @@ h2 {
 
 
 .introduction h3 {
-    border-bottom: 1px solid #000;
-    display: inline-block;
-    line-height: 1;
+
     margin-top: 25px;
 
 }
 
-.education h3 {
-    border-bottom: 1px solid #000;
-    display: inline-block;
-    line-height: 1;
 
-}
-
-.achievements h3 {
-    border-bottom: 1px solid #000;
-    display: inline-block;
-    line-height: 1;
-
-}
 
 .achievements ul {
     margin-left: 20px;
 }
 
-.goals h3 {
-    border-bottom: 1px solid #000;
-    display: inline-block;
-    line-height: 1;
 
-}
 
 
 
@@ -666,7 +704,7 @@ h2 {
 }
 
 #more-btn:hover {
-    background-color: #042438;
+    background-color: #1783c7;
 }
 
 .more-btn {
@@ -674,6 +712,11 @@ h2 {
     margin: auto;
     text-align: center;
 }
+
+
+
+
+
 
 
 
@@ -691,7 +734,7 @@ h2 {
 .skills-section h2 {
     padding-top: 20px;
     margin-top: 10px;
-    font-size: 2em;
+    font-size: 40px;
     margin-bottom: 50px;
     border-bottom: 1px solid #000;
     display: inline-block;
@@ -727,7 +770,7 @@ h2 {
     height: 200px;
     /* Set the height of your columns */
     min-width: 250px;
-    max-width: 350px;
+    max-width: 385px;
     margin: 10px;
     /* Adjust margin between columns */
     background-size: cover;
@@ -742,6 +785,12 @@ h2 {
     border-radius: 15px;
     transition: background-color 0.3s;
     transition: all 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+    .skills-col {
+        min-width: 40%;
+    }
 }
 
 #skills-col1:hover {
@@ -902,6 +951,7 @@ h2 {
 
 
 
+
 .projects {
     width: 100%;
     text-align: center;
@@ -911,7 +961,7 @@ h2 {
 
 .projects h2 {
     padding-top: 35px;
-    font-size: 2em;
+    font-size: 40px;
     margin-top: 30px;
     margin-bottom: 20px;
     border-bottom: 1px solid #000;
@@ -972,6 +1022,7 @@ h2 {
 }
 
 .minor-content .pdf-button {
+    margin-top: 2px;
     cursor: pointer;
 }
 
@@ -1108,18 +1159,27 @@ h2 {
     color: #124707;
 }
 
+
+
+
+
+
 .fa-instagram {
     color: white;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
     border-radius: 7px;
     height: 24px;
+
+
 }
 
-;
+
+
 
 .fa-linkedin {
-    color: #0076b505;
+    color: rgb(9, 39, 173);
+    border-radius: 3px;
 }
 
 .fa-facebook {
@@ -1137,7 +1197,6 @@ h2 {
 
 
 .footer-section {
-    margin-top: 15px;
     background-color: #90b3cc;
     /* Set background color */
     text-align: center;
@@ -1153,6 +1212,10 @@ h2 {
 
 .footer-thanks {
     margin-bottom: 15px;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     /* Add margin at the bottom */
 }
 
@@ -1165,13 +1228,20 @@ h2 {
 
 
 .made-with {
+    font-size: 16px;
     margin-top: 20px;
     /* Add margin at the top */
     color: #242222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* Set color for "Made with" text */
 }
 
 .made-with i {
+    margin: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
     color: #e7210b;
     /* Set color for heart icon */
 }
@@ -1181,6 +1251,9 @@ h2 {
 .marking {
     font-size: 11px;
     color: #3b3d41;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 
@@ -1192,20 +1265,55 @@ h2 {
     text-align: center;
     box-sizing: border-box;
     width: 100%;
+    padding-bottom: 50px;
 
 }
 
+.certificate img{
+    outline: 2px solid black;
+}
 .certifications h2 {
     margin-top: 80px;
     text-align: center;
-    border-bottom: 1px solid #000;
     display: inline-block;
     line-height: 1.3;
-    min-width: 60%;
-    font-size: 2em;
-    margin-bottom: 20px;
+    
+    margin-bottom: 10px;
+
+    color: crimson;
+    
 }
 
+@media (min-width: 1100px) {
+    .certifications h2 {
+        font-size: 80px;
+        font-family: Brush Script MT;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .certifications h2 {
+        font-size: 60px;
+        font-weight: 600;
+        font-family: cursive;
+    }
+
+}
+
+
+
+.certificate h3 {
+    margin-top: 50px;
+    color: rgb(59, 75, 167);
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.certificate p {
+    margin-top: 8px;
+    color: black;
+}
 
 
 
@@ -1218,20 +1326,20 @@ h2 {
 }
 
 .certificate-col {
-    
+
     width: 40%;
     display: block;
     margin: 5%;
-    
+
 }
 
 
 
-.certificate-col2{
+.certificate-col2 {
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    padding-bottom: 50px;
 }
 
 .certificate-col2 img {
@@ -1243,17 +1351,21 @@ h2 {
 
 
 .certificate-col img {
-    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
-    height: auto; 
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the width of its container */
+    height: auto;
 }
 
 @media (max-width: 768px) {
     .certificate-col {
         width: 90%;
     }
-    .certificate-col2{
+
+    .certificate-col2 {
         width: 90%;
-        margin: 5%;
+        padding-top: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
 }

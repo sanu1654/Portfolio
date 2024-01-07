@@ -28,11 +28,14 @@
                     <li><a href="#Home"> Home </a></li>
                     <li><a href="#About"> About</a></li>
                     <li class="dropdown" id="skillsDropdown">
-                        <a  onclick="toggleDropdown(event)" href="#"  >Skills </a>
-                        <div  class="dropdown-content" id="no-decoration" >
-                            <a href="#skills-section"   onclick="hideDropdown()">My Skills</a>
-                            <a    href="Certificates.html"   onclick="hideDropdown()">Certificates</a>
-                          </div>
+                        <a class="moveSkills" onclick="toggleDropdown(event)" href="#" > Skills 
+                            <span class="fa-solid fa-chevron-down"></span> </a>
+
+
+                        <div class="dropdown-content" id="no-decoration">
+                            <a href="#skills-section" onclick="hideDropdown()"> My Skills</a>
+                            <a href="Certificates.html" onclick="hideDropdown()"> Certificates</a>
+                        </div>
 
                     </li>
                     <li><a href="project.html"> Projects </a></li>
@@ -54,7 +57,7 @@
                     <h4>Welcome to my Portfolio Website.<h4>
                             <h3>I'm a <span id="element"></span></h3>
                             <div class="butt" id="butt">
-                                <a href="Sanu.Resume.pdf" download="Sanu_Resume.pdf">
+                                <a href="My Resume - SRM.pdf" download="Sanu_Resume.pdf">
                                     <button class="download-button" id="download-button">Download Resume</button>
                                 </a>
                             </div>
@@ -80,9 +83,10 @@
         <div class="about-section">
             <h2>About Me</h2>
             <br>
+            <br>
             <section class="introduction" id="introduction">
-                <h3>Introduction</h3>
-                <p></p>
+                <h3> <span>Introduction</span> </h3>
+                <br>
                 <p>
                     I'm Satyaprakash Sanu, an Engineering Undergraduate with a
                     passion for Website Development and Data Science. Hailing from Samastipur, Bihar, my roots are
@@ -96,12 +100,13 @@
                     fuel my creativity.
                 </p>
             </section>
+            <br>
 
 
 
             <section class="education">
-                <h3>Education</h3>
-                <p></p>
+                <h3> <span>Education</span> </h3>
+                <br>
                 <p>
                     Currently pursuing my bachelor's degree in Electronics and Computer Science Engineering at <a
                         href="https://www.srmist.edu.in/" target="_blank">SRM Institute of Science & Technology</a>
@@ -116,7 +121,7 @@
                 <p> Throughout my
                     journey, I've learnt programming languages like Python, C, and C++, and gained knowledge in
                     web development technologies such as HTML5, CSS3, and JavaScript. My skills further extend to
-                    databases, including SQL and DBMS.
+                    database management, including SQL and DBMS.
                 </p>
 
                 <p>
@@ -129,11 +134,12 @@
                 </p>
 
             </section>
+            <br>
 
             <div id="hidden-content" class="hidden-content">
                 <section class="achievements">
-                    <h3>Achievements</h3>
-                    <p></p>
+                    <h3><span>Achievements</span></h3>
+                    <br>
                     <ul>
                         <li>
                             <h5>Qualified ALL INDIA SAINIK SCHOOLS ENTRANCE EXAM (AISSEE)</h5>
@@ -156,10 +162,11 @@
                             Olympiad (IMO) in 2015 by securing the 1st rank at the school level in class VIII.</p>
                     </ul>
                 </section>
+                <br>
 
                 <section class="goals">
-                    <h3>Future Goals</h3>
-                    <p></p>
+                    <h3><span>Future Goals</span></h3>
+                    <br>
                     <p>My goal is to make meaningful contributions to the world of technology and eager to contribute to
                         innovative projects and enhance my technical skills. Let's connect and explore the endless
                         possibilities together.
@@ -299,7 +306,7 @@
                         class="fab fa-linkedin"></i></a>
             </div>
             <div class="made-with">
-                <p>Made with <i class="fas fa-heart"></i> by Satyaprakash Sanu.</p>
+                <p>Made with </p><i class="fas fa-heart"></i> <p>by Satyaprakash Sanu.</p>
             </div>
 
             <div class="marking">

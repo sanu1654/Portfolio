@@ -28,11 +28,14 @@
                     <li><a href="index.html#Home"> Home </a></li>
                     <li><a href="index.html#About"> About</a></li>
                     <li class="dropdown" id="skillsDropdown">
-                        <a  onclick="toggleDropdown(event)" href="#">Skills</a>
-                        <div  class="dropdown-content" id="no-decoration" >
-                            <a href="index.html#skills-section"   onclick="hideDropdown()">My Skills</a>
-                            <a    href="Certificates.html"   onclick="hideDropdown()">Certificates</a>
-                          </div>
+                        <a class="moveSkills" onclick="toggleDropdown(event)" href="#" > Skills 
+                            <span class="fa-solid fa-chevron-down"></span> </a>
+
+
+                        <div class="dropdown-content" id="no-decoration">
+                            <a href="index.html#skills-section" onclick="hideDropdown()"> My Skills</a>
+                            <a href="Certificates.html" onclick="hideDropdown()"> Certificates</a>
+                        </div>
 
                     </li>
                     <li><a href="#projects"> Projects </a></li>
@@ -60,16 +63,7 @@
             space that I designed with creativity and simplicity in mind.
         </p>
         <br>
-        <p>
-            I am currently immersed in the development of my degree Major project—an innovative Intelligent Multi-Camera
-            Surveillance System. This project will utilize cutting-edge technology, incorporating the YOLOv8 module in
-            Python for advanced object detection, segmentation, and tracking. The integration of OpenCV will ensure
-            real-time frame display, while the Ultralytics package enhanced the capabilities of our surveillance system.
-            One notable feature of this project will be its multi-streaming functionality achieved through the threading
-            module. The primary goal of this intelligent surveillance system is to redefine security standards by
-            providing comprehensive object tracking across multiple cameras simultaneously.
-        </p>
-
+        
 
         <section class="project-image" id="project-image">
             <div class="minor-col" id="minor-iamge-col">
@@ -139,6 +133,17 @@
         </section>
 
         <p>
+            I am currently immersed in the development of my degree Major project—an innovative Intelligent Multi-Camera
+            Surveillance System. This project will utilize cutting-edge technology, incorporating the YOLOv8 module in
+            Python for advanced object detection, segmentation, and tracking. The integration of OpenCV will ensure
+            real-time frame display, while the Ultralytics package enhanced the capabilities of our surveillance system.
+            One notable feature of this project will be its multi-streaming functionality achieved through the threading
+            module. The primary goal of this intelligent surveillance system is to redefine security standards by
+            providing comprehensive object tracking across multiple cameras simultaneously.
+        </p>
+
+
+        <p>
 
             In addition
             to these projects, I have worked on several intersting projects including a Spelling Corrector Application
@@ -148,6 +153,7 @@
             to real-world challenges.
 
         </p>
+        <br><br>
 
 
 
@@ -179,7 +185,7 @@
                         class="fab fa-linkedin"></i></a>
             </div>
             <div class="made-with">
-                <p>Made with <i class="fas fa-heart"></i> by Satyaprakash Sanu.</p>
+                <p>Made with</p> <i class="fas fa-heart"></i> <p></p>by Satyaprakash Sanu.</p>
             </div>
 
             <div class="marking">
