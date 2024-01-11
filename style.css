@@ -757,9 +757,9 @@ nav .fa-bars {
     margin-top: 27px;
     margin-bottom: 18px;
     text-align: center;
-    font-family: 'verdana', sans-serif;
-    font-weight: 100;
-    font-size: 23px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .skills-col p {
@@ -909,8 +909,8 @@ nav .fa-bars {
 .explore-button {
     display: inline-block;
     padding: 12px 20px;
-    font-family: 'verdana', sans-serif;
-    font-weight: 100;
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
     font-size: 16px;
     text-decoration: none;
     background-color: crimson;
