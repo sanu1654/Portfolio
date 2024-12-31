@@ -1355,6 +1355,26 @@ nav .fa-bars {
 
 }
 
+.Engineering-Degree-Container {
+    display: flex;
+    justify-content: center; /* Centers the child (image and text) horizontally */
+    align-items: center; /* Centers the child (image and text) vertically */
+    margin: 40px;
+}
+
+.Engineering-Degree {
+    text-align: center; /* Centers the text below the image */
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    padding-bottom: 50px;
+}
+
+.Engineering-Degree img {
+    max-width: 100%; /* Ensures the image scales responsively */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block;
+}
 
 
 .certificate-col2 {
@@ -1390,4 +1410,17 @@ nav .fa-bars {
         margin-right: 5%;
     }
 
+    .Engineering-Degree {
+        width: 100%;
+        padding-top: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .certifications h2{
+        font-size: 50px;
+    }
 }
