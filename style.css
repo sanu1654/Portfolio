@@ -485,8 +485,6 @@ nav .fa-bars {
 
 
 
-
-
 .butt {
     margin-left: 90px;
 }
@@ -717,6 +715,110 @@ nav .fa-bars {
 
 
 
+.career-section {
+    margin: 40px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.Jobs{
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.career-section h2 {
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 45px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    line-height: 1.5;
+    min-width: 58%;
+}
+
+/* Career Item Styling */
+.career-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Reverse layout for second job */
+.career-item.reverse {
+    flex-direction: row-reverse;
+}
+
+#career-text-1{
+    text-align: right;
+}
+
+/* Logo */
+.career-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.career-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Text */
+.career-text {
+    flex: 1;
+    text-align: left;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.company {
+    font-weight: bold;
+    color: #444;
+}
+
+.date {
+    font-size: 14px;
+    color: #777;
+    padding-top: 5px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .career-item.reverse {
+        flex-direction: column;
+    }
+
+    #career-text-1{
+        text-align: center;
+    }
+
+    .career-text {
+        text-align: center;
+    }
+}
+
 
 
 
@@ -771,12 +873,13 @@ nav .fa-bars {
 .skills-col {
     position: relative;
     box-sizing: border-box;
+    flex-grow: 1;
     flex: 1;
+    flex-basis: 200;
     /* Each column takes equal space */
     height: 200px;
     /* Set the height of your columns */
-    min-width: 250px;
-    max-width: 385px;
+    
     margin: 10px;
     /* Adjust margin between columns */
     background-size: cover;
